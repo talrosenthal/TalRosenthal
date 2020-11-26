@@ -22,13 +22,13 @@ html {
     height: auto;
   }
   @keyframes AnimationName {
-    0%{background-position:0% 69%}
-    50%{background-position:100% 32%}
-    100%{background-position:0% 69%}
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
 }
 .background{
-        background: linear-gradient(119deg, #e294e6, #ec7f35, #e3bacd, #f3aa8e, #e196d4, #e16e2e);
-        background-size: 1200% 1200%;
+        background: linear-gradient(40deg, #e294e6, #ec7f35, #e3bacd, #f3aa8e, #e196d4, #e16e2e, #e5a1e7, #e17654);
+        background-size: 1600% 1600%;
         animation: AnimationName 11s ease infinite;
         width: 600px;
         height: 600px;
@@ -36,16 +36,16 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content:center;
-        border-radius: 8px;
-}
+} 
 .overlay{
-    background-image: url("bubbles1.png");
+    background-image: url("bubbles2.png");
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-blend-mode: luminosity;
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -59,6 +59,7 @@ body{
     padding: 50px;
 }
 img{
+    margin: 10px;
 }
 .top{
     display: flex;
@@ -89,15 +90,29 @@ ul{
     margin: 22px;
 }
 li {
+    font-size: 30px;
     display: block;
     height: 68px;
     width: 68px;
     line-height: 68px;
     -moz-border-radius: 34px; /* or 50% */
     border-radius: 34px; /* or 50% */
-    background: #c4c4c479;
+    background: #ffffff30;
     background-blend-mode: luminosity;
     color: black;
     text-align: center;
-    margin: 0 15px;
+    margin: 0 24px;
+}
+li :hover{
+    display: block;
+    height: 68px;
+    width: 68px;
+    line-height: 68px;
+    -moz-border-radius: 34px; /* or 50% */
+    border-radius: 34px; /* or 50% */
+    background: white;
+    color: salmon;
+}
+.portfolio :hover{
+color: salmon;
 }
