@@ -107,7 +107,8 @@
         text-align: center;
         margin: 0 24px;
     }
-    li :hover{
+      li :active{
+        font-size: 30px;
         display: block;
         height: 68px;
         width: 68px;
@@ -116,11 +117,15 @@
         border-radius: 34px; /* or 50% */
         background: white;
         color: salmon;
-    }
+      }
+
     .portfolio :hover{
     color: salmon;
     }
-}
+    .portfolio :active{
+      color: salmon;
+    }
+  }
 @media only screen and (min-width: 768px){
 html {
     box-sizing: border-box;
